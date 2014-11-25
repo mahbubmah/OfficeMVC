@@ -1,0 +1,74 @@
+﻿@model OfficeMvc.Models.tblOffice
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>tblOffice</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Designation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Designation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Basic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Basic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Conveyance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Conveyance)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HouseRent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HouseRent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmployeeId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmployeeId)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
